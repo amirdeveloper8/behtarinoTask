@@ -1,0 +1,256 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  min-height: 80vh;
+  min-width: 900px;
+  max-width: 1500px;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
+.image {
+  width: 30%;
+  background: rgb(107, 252, 201);
+  background: linear-gradient(
+    0deg,
+    rgba(107, 252, 201, 1) 0%,
+    rgba(67, 200, 203, 1) 100%
+  );
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.image span {
+  box-shadow: 0 0 4px 4px rgb(0 125 81);
+  border: 5px solid rgb(35 113 88) !important;
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+  padding: 2%;
+  min-height: 80vh;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title span {
+  color: var(--orange);
+}
+
+.content h1 {
+  color: var(--darkGrey);
+  text-transform: uppercase;
+}
+
+.category h3 {
+  color: var(--grey);
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.firstSec {
+  width: 100%;
+}
+
+.count {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.count h4 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.orgPrice {
+  color: var(--darkGrey);
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.offPrice {
+  color: var(--orange);
+}
+
+.description {
+  margin-top: 1.5rem;
+}
+
+.description h3 {
+  color: var(--darkGrey);
+}
+
+.description p {
+  color: var(--grey);
+}
+
+.select {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.selectColors {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+  width: 40%;
+  padding: 1rem 0;
+}
+
+.selectColors h3,
+.selectSize h3,
+.selectQTY h3 {
+  color: var(--darkGrey);
+  font-weight: 900;
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.colors {
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+}
+
+.radioColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 2px;
+}
+
+.activeColor {
+  border: 2px solid;
+}
+
+.selectSize {
+  padding: 1rem 2rem;
+  border-right: 2px solid var(--grey);
+  border-left: 2px solid var(--grey);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectQTY {
+  padding: 1rem 0;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.selectQTY div {
+  width: 100%;
+}
+
+.shopSec {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.addToCart {
+  background: var(--orange);
+  background: linear-gradient(0deg, var(--pink) 0%, var(--orange) 100%);
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 10px gray;
+  transition: 0.2s ease-in;
+}
+
+.addToCart:hover {
+  transform: scale(1.05);
+}
+
+.addToCart svg {
+  font-size: 1.8rem !important;
+}
+
+.share {
+  position: relative;
+}
+
+.shareIcon {
+  font-size: 1.8rem !important;
+  color: var(--grey);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.shareIcon:hover {
+  color: rgb(0, 68, 255);
+}
+
+.copyAlert {
+  background-color: rgba(56, 136, 60, 0.281);
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 980px) {
+  .title h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .product {
+    flex-direction: column;
+    min-width: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 95%;
+  }
+
+  .image {
+    min-height: auto;
+    width: 90%;
+    padding: 2% 5%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+  }
+  .image span {
+    margin: 2%;
+  }
+
+  .content {
+    width: 90%;
+  }
+}

@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Oswald, sans-serif;
 }
 
 a {
@@ -11,6 +12,11 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+:root {
+  --black: #222222;
+  --white: #f2f2f2;
+  --grey: #949494;
+  --darkGrey: #3f3f3f;
+  --orange: #ff816c;
+  --pink: #ff4765;
 }
